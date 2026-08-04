@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: langchain-single-agentic-ai
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: WEATHERSTACK_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false
