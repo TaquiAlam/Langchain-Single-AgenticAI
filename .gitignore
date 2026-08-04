@@ -1,0 +1,25 @@
+# Environment Variables
+.env
+Backend/.env
+*.env
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# IDE & OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
